@@ -11,6 +11,10 @@
   src: url("fonts/stadium/stadium.ttf") format("truetype");
 }
 
+body {
+  margin: 0;
+}
+
 .center {
   margin: 0;
   position: absolute;
