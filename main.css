@@ -1,19 +1,14 @@
+/* theme:
+#1c1c1c
+#2541b2
+#1768ac
+#06bee1
+#ffffff */
+
 @font-face {
   font-family: "CustomFont";
   /* src: url("fonts/afterclap/Afterclap_Personal_Use.otf") format("opentype"); */
   src: url("fonts/stadium/stadium.ttf") format("truetype");
-}
-
-@keyframes expand {
-  from {max-width: 0;}
-  to {max-width: 90%;}
-}
-
-hr {
-  color: #c4c4c4;
-  max-width: 90%;
-  animation-name: expand;
-  animation-duration: 3s;
 }
 
 .center {
@@ -28,7 +23,6 @@ hr {
 .title {
   font-family: "CustomFont";
   font-size: 60px;
-  /* color: #6d6d6d; */
   color: black;
 }
 
@@ -36,4 +30,10 @@ hr {
   width: 100%;
   height: 400px;
   position: relative;
+}
+
+#team {
+  height: 600px;
+  padding: 0;
+  background: linear-gradient(45deg, #1768ac, #06bee1);
 }
