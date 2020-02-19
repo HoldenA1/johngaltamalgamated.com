@@ -12,6 +12,8 @@
   font-family: "ArtDecoFont";
   src: url("fonts/stadium/stadium.ttf") format("truetype");
 }
+
+/* Mobile & General */
 body {
   margin: 0;
 }
@@ -75,4 +77,12 @@ body {
   text-decoration: none;
   color: #555;
   padding: 0.3rem 1rem;
+}
+
+/* IPad */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
 }
