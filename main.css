@@ -5,16 +5,16 @@
 #06bee1
 #ffffff */
 
+:root {
+  --main-bg-color: brown;
+}
 @font-face {
-  font-family: "CustomFont";
-  /* src: url("fonts/afterclap/Afterclap_Personal_Use.otf") format("opentype"); */
+  font-family: "ArtDecoFont";
   src: url("fonts/stadium/stadium.ttf") format("truetype");
 }
-
 body {
   margin: 0;
 }
-
 .center {
   margin: 0;
   position: absolute;
@@ -23,21 +23,56 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 .title {
-  font-family: "CustomFont";
+  font-family: "ArtDecoFont";
   font-size: 60px;
   color: black;
 }
-
 .model {
   width: 100%;
   height: 400px;
   position: relative;
 }
-
-#team {
-  height: 600px;
-  padding: 0;
+#about {
+  height: 30rem;
   background: linear-gradient(45deg, #1768ac, #06bee1);
+}
+#team {
+
+}
+.employee-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+.employee {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 15rem auto;
+  height: 15rem;
+  margin: auto;
+  overflow: hidden;
+}
+.employee--avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.employee--name {
+  color: #222;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.employee--description {
+  text-decoration: none;
+  color: #555;
+  padding: 0.3rem 1rem;
 }
