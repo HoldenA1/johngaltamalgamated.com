@@ -5,8 +5,10 @@
 #06bee1
 #ffffff */
 
+/* Global Vars */
 :root {
-  --main-bg-color: brown;
+  --dark-color: #1c1c1c;
+  --light-color: #ffffff;
 }
 @font-face {
   font-family: "ArtDecoFont";
@@ -16,6 +18,10 @@
 /* Mobile & General */
 body {
   margin: 0;
+}
+nav {
+  height: 3rem;
+  background: var(--dark-color);
 }
 .center {
   margin: 0;
@@ -27,10 +33,11 @@ body {
 }
 .title {
   font-family: "ArtDecoFont";
-  font-size: 60px;
+  font-size: 2.5rem;
   color: black;
+  text-align: center;
 }
-.model {
+#model {
   width: 100%;
   height: 400px;
   position: relative;

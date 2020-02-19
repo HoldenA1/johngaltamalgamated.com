@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Loads <model-viewer> for modern browsers: -->
     <script type="module"
@@ -20,8 +20,11 @@
   </head>
 
   <body>
+    <nav>
+
+    </nav>
     <section id="banner">
-      <model-viewer class="model" src="images/logo/galt_logo_3d.glb" auto-rotate>
+      <model-viewer id="model" src="images/logo/galt_logo_3d.glb">
         <h1 class="title center">John Galt Amalgamated</h1>
       </model-viewer>
     </section>
@@ -31,7 +34,7 @@
     </section>
 
     <section id="team">
-      <h2 style="text-align: center;">Meet the Team</h2>
+      <h2>Meet the Team</h2>
       <div class="employee-container">
         <div class="employee">
           <img class="employee--avatar" src="images/juan.jpg" />
@@ -51,5 +54,7 @@
       </div>
     <section>
   </body>
+
+  <script src="main.js"></script>
 
 </html>
