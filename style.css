@@ -1,16 +1,11 @@
-/* theme:
-#1c1c1c
-#2541b2
-#1768ac
-#06bee1
-#ffffff */
-
 /* Global Vars */
 :root {
   --black-color: #1c1c1c;
   --dark-blue-color: #2541b2;
   --dark-grey-color: #333;
   --light-grey-color: #ddd;
+  --blue-color: #1768ac;
+  --light-blue-color: #06bee1;
   --light-color: #ffffff;
 }
 @font-face {
@@ -18,13 +13,13 @@
   src: url("fonts/stadium/stadium.ttf") format("truetype");
 }
 
-/* Mobile & General */
+/* General */
 body {
   margin: 0;
 }
 h2 {
   font-family: "ArtDecoFont";
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: black;
   text-align: center;
 }
@@ -158,8 +153,11 @@ p {
   padding: 0.3rem 1rem;
 }
 
-/* IPad */
+/* Ipad or larger */
 @media (min-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 /* Desktop */
