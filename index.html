@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css">
 
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Loads <model-viewer> for modern browsers: -->
     <script type="module"
         src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
@@ -20,12 +23,21 @@
   </head>
 
   <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">John Galt Amalgamated</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <nav>
+    <!-- <img src="images/logo/galt_logo_xs_white.png"/> -->
 
-    </nav>
     <section id="banner">
       <model-viewer id="model" src="images/logo/galt_logo_3d.glb">
-        <h1 class="title center">John Galt Amalgamated</h1>
+        <div id="quote" class="center">Who is John Galt?</div>
       </model-viewer>
     </section>
 
@@ -36,16 +48,6 @@
     <section id="team">
       <h2>Meet the Team</h2>
       <div class="employee-container">
-        <div class="employee">
-          <img class="employee--avatar" src="images/juan.jpg" />
-          <h1 class="employee--name">Juan</h1>
-          <p class="employee--description">This is what juan does</p>
-        </div>
-        <div class="employee">
-          <img class="employee--avatar" src="images/juan.jpg" />
-          <h1 class="employee--name">Juan</h1>
-          <p class="employee--description">This is what juan does</p>
-        </div>
         <div class="employee">
           <img class="employee--avatar" src="images/juan.jpg" />
           <h1 class="employee--name">Juan</h1>
