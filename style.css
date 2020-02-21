@@ -24,6 +24,7 @@ h2 {
   text-align: center;
 }
 hr {
+  border-top: 2px;
   color: var(--light-grey-color);
   max-width: 768px;
 }
